@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run sass",
+    "start": "live-server public --open",
     "sass": "sass public/assets/scss/:public/assets/css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "live-server": "^1.2.2",
     "sass": "^1.85.0"
   },
   "dependencies": {
