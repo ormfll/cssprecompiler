@@ -98,7 +98,17 @@ article {
     flex-wrap: wrap;
 
     .image-part {
-        margin-bottom: 10px;
+        flex: 1;
+        overflow: hidden;
+        margin-bottom: 0;
+    
+        img {
+            transition: transform 3.5s ease-in-out;
+        }
+    
+        img:hover {
+            transform: scale(1.5, 1.5);
+        }
     }
 
     .post-title {
@@ -128,37 +138,37 @@ footer {
     text-align: center;
     background: $footer-bg-color;
     color: $footer-text-color;
+
+    .footer-logo {
+        width: 200px;
+        margin: 20px auto;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .footer-social-links {
+        padding: 20px 0;
+        line-height: 2em;
+
+        a {
+            margin: 0 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        a span {
+            display: none;
+        }
+    }
+
+    #footer-copyright {
+        padding: 20px 0;
+        font-size: 12px;
+        color: #989898;
+    }
 }
-#footer a {
-    color: $footer-text-color;
-}
-#footer a:hover {
-    color: $footer-hover-color;
-}
-.footer-logo {
-    width: 200px;
-    margin: 20px auto;
-    text-align: center;
-    vertical-align: middle;
-}
-.footer-social-links {
-    padding: 20px 0;
-    line-height: 2em;
-}
-.footer-social-links a {
-    margin: 0 10px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.footer-social-links a span {
-    display: none;
-}
-#footer-copyright {
-    padding: 20px 0;
-    font-size: 12px;
-    color: #989898;
-}
+
 
 
 @media only screen and (min-width: 650px) {
